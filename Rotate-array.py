@@ -6,7 +6,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        k = k%len(nums)
+        k = k%len(nums) # k might be larger than the  length of the array
         l , r = 0, len(nums)-1
         while l<r:
             nums[l], nums[r] = nums[r], nums[l]
